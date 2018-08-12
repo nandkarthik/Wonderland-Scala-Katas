@@ -8,9 +8,8 @@ class AlphabetCipherSpec extends FlatSpec with Matchers {
   }
 
   "decode" should "decode an cyrpted message given a secret keyword" in {
-    assert(decode("vigilance","hmkbxebpxpmyllyrxiiqtoltfgzzv") == "meetmeontuesdayeveningatseven")
     assert(decode("scones","egsgqwtahuiljgs") == "meetmebythetree")
-
+    assert(decode("vigilance","hmkbxebpxpmyllyrxiiqtoltfgzzv") == "meetmeontuesdayeveningatseven")
   }
 
   "decipher" should "extract the secret keyword given an encrypted message and the original message" in {
